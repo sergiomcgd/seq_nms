@@ -32,6 +32,11 @@ Now we are ready to create an Anaconda environment, to do this you can follow st
    - tf_object_detection:`conda  install  -c  conda-forge tf_object_detection`
 5. Make the project:
    - `make`
+   - Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+      - `export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}`
+      - `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64`
+      - `export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.1/lib64`
+   
 6. Download weights and tiny weights
    - `wget https://pjreddie.com/media/files/yolo.weights`
    - `wget https://pjreddie.com/media/files/yolo-tiny.weights`
@@ -44,7 +49,7 @@ Now we are ready to create an Anaconda environment, to do this you can follow st
    - `cd ..`
    - `python yolo_seqnms.py`
 10. To obtain a video from the resulting output images go to video folder and run `img2video.py`
-   - cd video
+   - `cd video`
    - `python img2video.py -i output`
 
 The results would be available in `video/output`
@@ -52,4 +57,7 @@ The results would be available in `video/output`
 ## Reference
 
 This project copies lots of code from [darknet](https://github.com/pjreddie/darknet) , [Seq-NMS](https://github.com/lrghust/Seq-NMS) and  [models](https://github.com/tensorflow/models).
+
+Some instructions were extracted from: https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html
+
 
