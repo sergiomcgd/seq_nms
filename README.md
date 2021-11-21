@@ -30,7 +30,7 @@ Now we are ready to create an Anaconda environment, to do this you can follow st
    - tensorflow: `conda install -c anaconda tensorflow-gpu`
    - pillow: `conda install -c anaconda pillow`
    - tf_object_detection:`conda  install  -c  conda-forge tf_object_detection`
-5. Make the project:
+5. Make the project (make sure that the environment is activated, if not, activate it with `source activate Yolo_env`):
    - `make`
    - Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
       - `export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}`
