@@ -52,7 +52,7 @@ Now we are ready to create an Anaconda environment, to do this you can follow st
    - `cd video`
    - `python img2video.py -i output`
 
-The results would be available in `video/output`
+The results would be available in the video folder.
 
 ## Reference
 
