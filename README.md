@@ -18,7 +18,7 @@ This tutorial is designed for Linux with Anaconda.
    - `git clone https://github.com/sergiomcgd/seq_nms.git`
    - `cd seq_nms`
    
-Now we are ready to create an Anaconda environment, to do this you can follow steps 3 and 4 or you can just load the environment from the provided .yml file doing: `conda env create -f Yolo_env`. In case you choose the last option, you should jump to step 5. 
+Now we are ready to create an Anaconda environment, to do this you can follow steps 3 and 4 or you can just load the environment from the provided .yml file doing: `conda env create -f Yolo_env.yml`. In case you choose the last option, you should jump to step 5. 
 
 3. Create an environment (manually):
    - `conda create --name Yolo_env python=2.7` (make sure that you install python 2.7 as all the code is implemented using this Python version.)
