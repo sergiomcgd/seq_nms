@@ -40,8 +40,8 @@ Now we are ready to create an Anaconda environment, to do this you can follow st
 6. Download weights and tiny weights
    - `wget https://pjreddie.com/media/files/yolo.weights`
    - `wget https://pjreddie.com/media/files/yolo-tiny.weights`
-7. Copy a video file to the video folder (/seq_nms_yolo/video)
-8. In the video folder (/seq_nms_yolo/video) run video2img.py and get_pkllist.py:
+7. Copy a video file to the video folder (/seq_nms/video)
+8. In the video folder (/seq_nms/video) run video2img.py and get_pkllist.py:
    - `cd video`
    - `python video2img.py -i video.avi`
    - `python get_pkllist.py`
